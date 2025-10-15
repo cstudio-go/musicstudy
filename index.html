@@ -103,6 +103,13 @@ tl.to("#intro", { duration: 1, opacity: 0, delay: 0.8, onComplete: () => {
 // Step 4: Show main content
 tl.to("#main", { duration: 1, opacity: 1 }, "<");
 </script>
-
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Wait for splash screen animation to finish (3 seconds)
+    setTimeout(() => {
+    window.location.href = "main.html"; // Replace 'main.html' with your target HTML file
+}, 5000); // Match the animation duration in CSS
+});
+</script>
 </body>
 </html>
