@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Intro with GSAP</title>
+
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #4c9ad1;
+  }
+
+  #text {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Fullscreen intro container */
+  #intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /* Logo styling */
+  #logo {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    border-radius: 9999px;
+  }
+
+  /* Main content hidden initially */
+  #main {
+    opacity: 0;
+    text-align: center;
+    color: white;
+    margin-top: 40vh;
+  }
+
+  @media screen and (max-width: 500px) {
+    #logo{
+        width: 300px;
+        height: auto;
+    }
+    
+    html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #ffffff;
+  }
+    #text {
+        background-color: rgb(77, 178, 245);
+        width: 300px;
+    }
+
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Intro screen -->
+<div id="intro">
+  <img id="logo" src="logo2.png" alt="Logo">
+</div>
+
+<!-- Main site content -->
+<div id="main">
+  <h1 style="border: #5587ab 1px solid; border-radius: 20px;" id="text">大台北區音樂家教網</h1>
+</div>
+
+<script>
+// Timeline for animation
+const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+// Step 1: Fade + Scale + Rotate logo in
+tl.to("#logo", { duration: 2.5, opacity: 1, scale: 1.3, rotation: 360 });
+
+
+// Step 3: Fade out intro
+tl.to("#intro", { duration: 1, opacity: 0, delay: 0.8, onComplete: () => {
+  document.getElementById("intro").style.display = "none";
+}});
+
+// Step 4: Show main content
+tl.to("#main", { duration: 1, opacity: 1 }, "<");
+</script>
+
+</body>
+</html>
