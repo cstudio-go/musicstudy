@@ -8,6 +8,8 @@
 <!-- GSAP CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <style>
   html, body {
     margin: 0;
@@ -84,7 +86,7 @@
 
 <!-- Main site content -->
 <div id="main">
-  <h1 style="border: #5587ab 1px solid; border-radius: 20px;" id="text">大台北區音樂家教網</h1>
+  <h1 style="border: #5587ab 1px solid; border-radius: 20px;" id="text" class="animate__animated animate__fadeIn animate__delay-4s">大台北區音樂家教網</h1>
 </div>
 
 <script>
@@ -108,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Wait for splash screen animation to finish (3 seconds)
     setTimeout(() => {
     window.location.href = "main.html"; // Replace 'main.html' with your target HTML file
-}, 5000); // Match the animation duration in CSS
+}, 5500); // Match the animation duration in CSS
 });
 </script>
 </body>
