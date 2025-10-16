@@ -27,8 +27,9 @@
 
   #text {
     display: block;
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
+    animation-delay: 4s;
   }
 
   /* Fullscreen intro container */
@@ -77,6 +78,9 @@
     #text {
         background-color: rgb(77, 178, 245);
         width: 300px;
+        animation-delay: 3.5s; /* delay only for small screens */
+    animation-duration: 2s; /* match your rollIn duration */
+    animation-name: flipInX;
     }
 
   }
@@ -92,7 +96,7 @@
 
 <!-- Main site content -->
 <div id="main">
-  <h1 style="border: #5587ab 1px solid; border-radius: 20px;" id="text" class="animate__animated animate__fadeIn animate__delay-4s">大台北區音樂家教網</h1>
+  <h1 style="border: white 1px solid; border-radius: 20px;" id="text" class="animate__animated animate__fadeIn">大台北區音樂家教網</h1>
 </div>
 
 <script>
@@ -116,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Wait for splash screen animation to finish (3 seconds)
     setTimeout(() => {
     window.location.href = "main.html"; // Replace 'main.html' with your target HTML file
-}, 5500); // Match the animation duration in CSS
+}, 5800); // Match the animation duration in CSS
 });
 </script>
 </body>
