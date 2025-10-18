@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大台北區音樂家教網 - 教師登記</title>
+    <title>大台北區音樂家教網</title>
     <meta name="description" content="大台北區音樂家教網，音樂教師派遣">
 <meta name ="keywords" content="音樂家教, 樂器家教, 音樂教師, 台北地區, 學音樂, 音樂老師, 台北音樂">
 <meta property="og:image" content="logo1-1.png">
@@ -20,8 +20,7 @@
 
   #img {
     width: auto;
-    height: 300px;
-    border-radius: 50px;
+    height: 150px;
     
   }
   #portrait{
@@ -75,6 +74,7 @@
     #img{
         border-radius: 0;
     }
+
   }
 
 
@@ -124,26 +124,28 @@
 
       <div class="card mb-3">
         <span class="line">
-        <h3 class="card-header" style="text-align: center; ">歡迎音樂教師加入我們！</h3>
+        <h3 class="card-header" style="text-align: center; ">歡迎來到大台北區音樂家教網</h3>
         <div class="card-body">
           
-          <h5 class="card-title" style="text-align: center;"><a class="btn btn-outline-primary">登入</a> <a class="btn btn-outline-secondary">登出</a> <a class="btn btn-outline-secondary">會員註冊</a><span style="font-size: xx-small; margin-left: 5px;">歡迎！{訪客} </span></h5> 
+         <div><h5 class="card-title" style="text-align: center; font-size: medium;">教師系統:&nbsp;&nbsp;<a class="btn btn-outline-primary">登入</a> <a class="btn btn-outline-secondary">登出</a> <a class="btn btn-outline-secondary">教師註冊</a><span style="font-size: xx-small; margin-left: 10px; white-space: nowrap; color: rgb(156, 153, 153)"> 歡迎！{訪客} </span></h5></div> 
         </div>
-        <img src="asset/ex3.webp" class="d-block user-select-none" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle; margin: 0 auto;" id="img">
+        <img src="logo1-1.png" class="d-block user-select-none" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle; margin: 0 auto;" id="img">
           <rect width="100%" height="100%" fill="#868e96"></rect>
         <div class="card-body">
         </span>
-          <p class="card-text" id="text" style="text-align: center;"><span id="about">-我們知道招生並不容易-</span>所以我們存在！團隊致力於連接音樂教學，<span style="white-space: nowrap;">通過我們的推薦，學生跟教師都可以獲益，</span><span style="white-space: nowrap;">現在就來登記吧！</span></p>
+        <p class="card-text" id="text" style="text-align: center;"><span id="about">歡迎教師申請｜審核通過後我們會與您聯繫簽約</span></p>
+          <a href="/" class="btn btn-info" id="about" style="margin: 0 auto; width: 80px">申請表</a><br><br>
         
         <ul class="list-group list-group-flush" style="text-align: center;">
-          <li class="list-group-item"><a href="application.html" class="btn btn-primary">我要登記</a></li>
+          <li class="list-group-item">-台北市音樂家團隊-</li>
           <li class="list-group-item">--音樂教育--展望未來--</li>
         </ul>
         <div class="card-body" style="text-align: center;">
-          <a href="bio.html" class="card-link btn btn-outline-primary" style="padding: 1px 8px">最新案件</a>
-          <button class="card-link btn btn-outline-info" type="button" onclick="showvideo()" id="audioButton" style="padding: 1px 8px">關於我們</button>
+          <a href="findTeacher.html" class="card-link btn btn-outline-primary" style="padding: 1px 8px">尋找教師</a>
+          <button class="card-link btn btn-outline-info" type="button" onclick="showvideo()" id="audioButton" style="padding: 1px 8px">最新案件</button>
         </div>
-        
+        <div id="audioText" style="display: none; text-align: center; color: rgb(83, 79, 79);">流浪者之歌 -小提琴</div>
+        <audio id="audio1" controls style="display: none; margin:5px auto;">試聽</audio>
         <div class="card-footer text-muted" style="text-align: center;">
           www.musicstudy-go.com<br>
         <span style="font-size:xx-small">  © 2025 大台北區音樂家教網. All Rights Reserved. </span>
@@ -162,7 +164,6 @@ $('.line').fadeIn(2000);
 
 
         </script>
-
         <script>
           contact = () => {
             alert('Line: 8899610');
