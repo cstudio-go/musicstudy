@@ -72,7 +72,7 @@ const Home = {
     <p class="card-text">首先告訴我們您想要尋找哪方面的音樂教師？</p>
     <router-link to="/intro" class="btn btn-primary me-2">古典音樂</router-link>
     <router-link to="/intro2" class="btn btn-primary me-2">流行音樂</router-link>
-    <router-link to="/intro" class="btn btn-primary">爵士音樂</router-link>
+    <router-link to="/intro3" class="btn btn-primary">爵士音樂</router-link>
   </div>
 </div>
   `
@@ -86,14 +86,14 @@ const Intro = {
     <h5 class="card-title" style="text-align: center"><em><古典音樂> 一種以理性結構與情感深度交織而成的藝術語言</em></h5>
     <p class="card-text">再來，請告訴我們您想要尋找的古典音樂類型教師</p>
     <div class="d-flex flex-wrap justify-content-center gap-2">
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">鍵盤樂器</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">弦樂器</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">管樂器</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">打擊樂器</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">管樂器</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">聲樂</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">試唱聽寫</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">理論作曲</router-link>
+    <router-link to="/classical1" class="btn btn-primary me-2 btn-sm">鍵盤樂器</router-link>
+    <router-link to="/classical2" class="btn btn-primary me-2 btn-sm">弦樂器</router-link>
+    <router-link to="/classical3" class="btn btn-primary me-2 btn-sm">管樂器</router-link>
+    <router-link to="/classical4" class="btn btn-primary me-2 btn-sm">打擊樂器</router-link>
+    <router-link to="/classical5" class="btn btn-primary me-2 btn-sm">指揮</router-link>
+    <router-link to="/classical6" class="btn btn-primary me-2 btn-sm">聲樂</router-link>
+    <router-link to="/classical7" class="btn btn-primary me-2 btn-sm">試唱聽寫</router-link>
+    <router-link to="/classical8" class="btn btn-primary me-2 btn-sm">理論作曲</router-link>
     </div>
   </div>
 </div>
@@ -119,10 +119,10 @@ const Intro2 = {
   <img src="asset/ex3.webp" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title animate__animated animate__fadeInLeft"><流行音樂>旋律簡單、易上口、節奏明快且貼近大眾生活情感的音樂類型</h5>
-    <p class="card-text animate__animated animate__fadeInRight">再來，請告訴我們您想要尋找的流行音樂類型教師</p>
-    <router-link to="intro3" class="btn btn-primary me-2 btn-sm">流行演唱</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">流行音樂鋼琴伴奏</router-link>
-    <router-link to="/intro2" class="btn btn-primary me-2 btn-sm">流行音樂理論</router-link>
+    <p class="card-text animate__animated animate__fadeInRight">再來，告訴我們想要尋找的流行音樂類型教師</p>
+    <router-link to="pop1" class="btn btn-primary me-2 btn-sm">流行演唱</router-link>
+    <router-link to="pop2" class="btn btn-primary me-2 btn-sm">流行音樂鋼琴伴奏</router-link>
+    <router-link to="pop3" class="btn btn-primary me-2 btn-sm">流行音樂理論</router-link>
   </div>
 </div>
   `
@@ -133,15 +133,291 @@ const Intro3 = {
      <div class="card">
   <img src="asset/ex7.webp" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title animate__animated animate__zoomIn">SPA的定製流程</h5>
-    <p class="card-text animate__animated animate__fadeIn">總製作流程約1-3週，包含客製化討論與定稿，客戶對接與成品上傳。</p>
-    <router-link to="Shop" class="btn btn-primary">商品展示</a>
+    <h5 class="card-title animate__animated animate__zoomIn"><爵士音樂>以即興演奏、藍調音階與複雜和聲為特徵，強調律動感與個人表現的音樂風格。</h5>
+    <p class="card-text animate__animated animate__fadeIn">再來，告訴我們想要尋找的爵士音樂類型教師</p>
+    <router-link to="jazz1" class="btn btn-primary me-2 btn-sm">爵士鋼琴</router-link>
+    <router-link to="jazz2" class="btn btn-primary me-2 btn-sm">爵士演唱</router-link>
+    <router-link to="jazz3" class="btn btn-primary me-2 btn-sm">其它樂器</router-link>
   </div>
 </div>
   `
 }
 
-const Shop = {
+const Classical1 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">鍵盤樂器</h5>
+    <p class="card-text animate__animated animate__fadeIn">鍵盤樂器是用手指按鍵創造旋律與和聲，能同時表現豐富音色與情感的樂器。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Classical2 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">弦樂器</h5>
+    <p class="card-text animate__animated animate__fadeIn">弦樂器是以振動弦線發聲，可用撥、拉或敲奏，表達細膩情感與豐富音色的樂器。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Classical3 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">管樂器</h5>
+    <p class="card-text animate__animated animate__fadeIn">管樂器是靠氣流振動產生聲音，能表現明亮、溫暖或穿透力的音色。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Classical4 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">打擊樂器</h5>
+    <p class="card-text animate__animated animate__fadeIn">打擊樂器是以敲、擊或搖動方式發聲，節奏感強且能展現多樣音色的樂器。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Classical5 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">指揮</h5>
+    <p class="card-text animate__animated animate__fadeIn">指揮是用手勢與表情引導樂團演奏，統整節奏、表情與音樂結構的領導者。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Classical6 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">聲樂</h5>
+    <p class="card-text animate__animated animate__fadeIn">聲樂是以人聲為樂器，表達旋律、情感與故事的音樂表現形式。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Classical7 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">視唱聽寫</h5>
+    <p class="card-text animate__animated animate__fadeIn">試唱聽寫是透過唱出或寫下聽到的旋律與節奏，訓練音準、節奏感與聽覺辨識能力的練習。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Classical8 = {
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">理論作曲 </h5>
+    <p class="card-text animate__animated animate__fadeIn">理論作曲是運用音樂理論規則創作旋律、和聲與曲式，將想法轉化為完整音樂作品的學習與實踐。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Pop1 = 
+{
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">流行演唱</h5>
+    <p class="card-text animate__animated animate__fadeIn">流行演唱是以旋律感染力和情感表達吸引大眾，展現個人風格與時尚感的歌唱形式。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Pop2 = 
+{
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">流行音樂鋼琴伴奏</h5>
+    <p class="card-text animate__animated animate__fadeIn">流行音樂鋼琴伴奏是用鋼琴演繹旋律與和聲，支撐歌手表情並營造曲風氛圍的演奏方式。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Pop3 = 
+{
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">流行音樂理論</h5>
+    <p class="card-text animate__animated animate__fadeIn">流行音樂理論是研究旋律、和聲、節奏與編曲規則，幫助創作和分析流行音樂作品的知識體系。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Jazz1 = 
+{
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">爵士鋼琴</h5>
+    <p class="card-text animate__animated animate__fadeIn">爵士鋼琴是以即興和複雜和聲為核心，結合節奏感與個人表情演奏爵士音樂的鍵盤方式。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Jazz2 = 
+{
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">爵士演唱</h5>
+    <p class="card-text animate__animated animate__fadeIn">爵士演唱是以自由即興、藍調音階與個人風格演繹旋律，強調節奏感與情感表達的歌唱形式。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</a>
+  </div>
+</div>
+  `
+}
+
+const Jazz3 = 
+{
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">其他樂器</h5>
+    <p class="card-text animate__animated animate__fadeIn">一個爵士樂隊可以由許多樂器一起組成，薩克斯風，低音提琴，小提琴都可以加入爵士樂隊，在這裡尋找適合您的老師。</p>
+    <router-link to="Place" class="btn btn-primary">選擇上課地點</router-link>
+  </div>
+</div>
+  `
+}
+
+const Place = 
+{
+  template: `
+     <div class="card">
+  <img src="asset/ex7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title animate__animated animate__zoomIn">再來</h5>
+    <p class="card-text animate__animated animate__fadeIn">告訴我們您希望的上課地點</p>
+    <router-link to="TaipeiDist1" class="btn btn-primary me-2">台北市</router-link>
+    <router-link to="TaipeiDist2" class="btn btn-primary me-2">新北市</router-link>
+  </div>
+</div>
+  `
+}
+
+
+const TaipeiDist1 = {
+  template: `
+     <div class="card animate__animated animate__fadeIn">
+  <img src="asset/ex2.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center"><em>台北市</em></h5>
+    <p class="card-text">您希望在哪個地區上課？</p>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+    <router-link to="/taipei1" class="btn btn-primary me-2 btn-sm">中正區</router-link>
+    <router-link to="/taipei2" class="btn btn-primary me-2 btn-sm">大同區</router-link>
+    <router-link to="/taipei3" class="btn btn-primary me-2 btn-sm">中山區</router-link>
+    <router-link to="/taipei4" class="btn btn-primary me-2 btn-sm">松山區</router-link>
+    <router-link to="/taipei5" class="btn btn-primary me-2 btn-sm">大安區</router-link>
+    <router-link to="/taipei6" class="btn btn-primary me-2 btn-sm">萬華區</router-link>
+    <router-link to="/taipei7" class="btn btn-primary me-2 btn-sm">信義區</router-link>
+    <router-link to="/taipei8" class="btn btn-primary me-2 btn-sm">士林區</router-link>
+    <router-link to="/taipei9" class="btn btn-primary me-2 btn-sm">北投區</router-link>
+    <router-link to="/taipei10" class="btn btn-primary me-2 btn-sm">內湖區</router-link>
+    <router-link to="/taipei11" class="btn btn-primary me-2 btn-sm">南港區</router-link>
+    <router-link to="/taipei12" class="btn btn-primary me-2 btn-sm">文山區</router-link>
+    </div>
+  </div>
+</div>
+  `
+}
+
+const TaipeiDist2 = {
+  template: `
+     <div class="card animate__animated animate__fadeIn">
+  <img src="asset/ex2.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center"><em>新北市</em></h5>
+    <p class="card-text">您希望在哪個地區上課？</p>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+    <router-link to="/newtaipei1" class="btn btn-primary me-2 btn-sm">板橋區</router-link>
+    <router-link to="/newtaipei2" class="btn btn-primary me-2 btn-sm">三重區</router-link>
+    <router-link to="/newtaipei3" class="btn btn-primary me-2 btn-sm">中和區</router-link>
+    <router-link to="/newtaipei4" class="btn btn-primary me-2 btn-sm">永和區</router-link>
+    <router-link to="/newtaipei5" class="btn btn-primary me-2 btn-sm">新莊區</router-link>
+    <router-link to="/newtaipei6" class="btn btn-primary me-2 btn-sm">樹林區</router-link>
+    <router-link to="/newtaipei7" class="btn btn-primary me-2 btn-sm">鶯歌區</router-link>
+    <router-link to="/newtaipei8" class="btn btn-primary me-2 btn-sm">三峽區</router-link>
+    <router-link to="/newtaipei9" class="btn btn-primary me-2 btn-sm">淡水區</router-link>
+    <router-link to="/newtaipei10" class="btn btn-primary me-2 btn-sm">瑞芳區</router-link>
+    <router-link to="/newtaipei11" class="btn btn-primary me-2 btn-sm">土城區</router-link>
+    <router-link to="/newtaipei12" class="btn btn-primary me-2 btn-sm">蘆洲區</router-link>
+    <router-link to="/newtaipei13" class="btn btn-primary me-2 btn-sm">五股區</router-link>
+    <router-link to="/newtaipei14" class="btn btn-primary me-2 btn-sm">泰山區</router-link>
+    <router-link to="/newtaipei15" class="btn btn-primary me-2 btn-sm">林口區</router-link>
+    <router-link to="/newtaipei16" class="btn btn-primary me-2 btn-sm">八里區</router-link>
+    <router-link to="/newtaipei17" class="btn btn-primary me-2 btn-sm">深坑區</router-link>
+    <router-link to="/newtaipei18" class="btn btn-primary me-2 btn-sm">石碇區</router-link>
+    <router-link to="/newtaipei19" class="btn btn-primary me-2 btn-sm">坪林區</router-link>
+    <router-link to="/newtaipei20" class="btn btn-primary me-2 btn-sm">三芝區</router-link>
+    <router-link to="/newtaipei21" class="btn btn-primary me-2 btn-sm">石門區</router-link>
+    <router-link to="/newtaipei22" class="btn btn-primary me-2 btn-sm">雙溪區</router-link>
+    <router-link to="/newtaipei23" class="btn btn-primary me-2 btn-sm">貢寮區</router-link>
+    <router-link to="/newtaipei24" class="btn btn-primary me-2 btn-sm">金山區</router-link>
+    <router-link to="/newtaipei25" class="btn btn-primary me-2 btn-sm">萬里區</router-link>
+    <router-link to="/newtaipei26" class="btn btn-primary me-2 btn-sm">烏來區</router-link>
+    <router-link to="/newtaipei27" class="btn btn-primary me-2 btn-sm">樹林區</router-link>
+    <router-link to="/newtaipei28" class="btn btn-primary me-2 btn-sm">鶯歌區</router-link>
+    <router-link to="/newtaipei29" class="btn btn-primary me-2 btn-sm">八里區</router-link>
+    </div>
+  </div>
+</div>
+  `
+}
+
+
+const Taipei1 = {
 
   template: `
      <div class="card violin">
@@ -156,7 +432,7 @@ const Shop = {
 
 }
 
-const Shop2 = {
+const Taipei2 = {
 
 template: `
    <div class="card">
@@ -171,7 +447,7 @@ template: `
 
 }
 
-const Shop3 = {
+const Taipei3 = {
 
 template: `
    <div class="card">
@@ -186,7 +462,7 @@ template: `
 
 }
 
-const Shop4 = {
+const Taipei4 = {
 
 template: `
    <div class="card">
@@ -201,16 +477,80 @@ template: `
 
 }
 
+const Taipei5 = {
+template: `
+   <div class="card">
+<img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="...">
+<div class="card-body">
+  <h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5>
+  <p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p>
+  <router-link to="shop" class="btn btn-primary">下一個</a>
+</div>
+</div>
+`
+}
+const Taipei6 = {
+template: `<div class="card"><img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="..."><div class="card-body"><h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5><p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p><router-link to="shop" class="btn btn-primary">下一個</a></div></div>`
+}
+
+const Taipei7 = {
+template: `<div class="card"><img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="..."><div class="card-body"><h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5><p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p><router-link to="shop" class="btn btn-primary">下一個</a></div></div>`
+}
+
+const Taipei8 = {
+template: `<div class="card"><img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="..."><div class="card-body"><h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5><p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p><router-link to="shop" class="btn btn-primary">下一個</a></div></div>`
+}
+
+const Taipei9 = {
+template: `<div class="card"><img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="..."><div class="card-body"><h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5><p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p><router-link to="shop" class="btn btn-primary">下一個</a></div></div>`
+}
+
+const Taipei10 = {
+template: `<div class="card"><img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="..."><div class="card-body"><h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5><p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p><router-link to="shop" class="btn btn-primary">下一個</a></div></div>`
+}
+
+const Taipei11 = {
+template: `<div class="card"><img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="..."><div class="card-body"><h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5><p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p><router-link to="shop" class="btn btn-primary">下一個</a></div></div>`
+}
+
+const Taipei12 = {
+template: `<div class="card"><img src="asset/ex6.webp" class="card-img-top animate__animated animate__fadeIn" alt="..."><div class="card-body"><h5 class="card-title animate__animated animate__fadeIn">KUN肩墊</h5><p class="card-text animate__animated animate__fadeInRight">KUN Bravo肩墊專為小提琴與中提琴設計，採用柔軟材質與符合人體工學的結構，可穩定支撐肩膀並分散壓力，減輕演奏時的疲勞感。KUN Bravo能提供舒適與穩定的支撐，幫助演奏者保持正確姿勢，提升演奏表現與持久力。<br><em style="color: grey">售價&nbsp;&nbsp;$4200</em></p><router-link to="shop" class="btn btn-primary">下一個</a></div></div>`
+}
 
 const routes = [
   { path: '/', component: Home },
   { path: '/intro', component: Intro },
   { path: '/intro2', component: Intro2},
   { path: '/intro3', component: Intro3},
-  { path: '/shop', component: Shop},
-  { path: '/shop2', component: Shop2},
-  { path: '/shop3', component: Shop3},
-  { path: '/shop4', component: Shop4},
+  { path: '/classical1', component: Classical1},
+  { path: '/classical2', component: Classical2},
+  { path: '/classical3', component: Classical3},
+  { path: '/classical4', component: Classical4},
+  { path: '/classical5', component: Classical5},
+  { path: '/classical6', component: Classical6},
+  { path: '/classical7', component: Classical7},
+  { path: '/classical8', component: Classical8},
+  { path: '/pop1', component: Pop1},
+  { path: '/pop2', component: Pop2},
+  { path: '/pop3', component: Pop3},
+  { path: '/jazz1', component: Jazz1},
+  { path: '/jazz2', component: Jazz2},
+  { path: '/jazz3', component: Jazz3},
+  { path: '/place', component: Place},
+  { path: '/taipeiDist1', component: TaipeiDist1},
+  { path: '/taipeiDist2', component: TaipeiDist2},
+  { path: '/taipei1', component: Taipei1},
+  { path: '/taipei2', component: Taipei2},
+  { path: '/taipei3', component: Taipei3},
+  { path: '/taipei4', component: Taipei4},
+  { path: '/taipei5', component: Taipei5},
+  { path: '/taipei6', component: Taipei6},
+  { path: '/taipei7', component: Taipei7},
+  { path: '/taipei8', component: Taipei8},
+  { path: '/taipei9', component: Taipei9},
+  { path: '/taipei10', component: Taipei10},
+  { path: '/taipei11', component: Taipei11},
+  { path: '/taipei12', component: Taipei12},
   { path: '/contact', component: Contact}
 ]
 
